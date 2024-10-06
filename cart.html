@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        /* CSS styles for cart.html */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cart-items {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .cart-items h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .cart-items ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .cart-items ul li {
+            margin-bottom: 5px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart-items" id="cartItems">
+            <h2>Your Cart</h2>
+            <ul>
+                <!-- JavaScript will populate this list -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+        // Retrieve selected items from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const itemsString = urlParams.get('items');
+        const items = JSON.parse(itemsString);
+
+        // Display selected items in the cart
+        const cartItems = document.getElementById("cartItems");
+        const itemList = document.createElement("ul");
+        items.forEach(item => {
+            const listItem = document.createElement("li");
+            listItem.textContent = item;
+            itemList.appendChild(listItem);
+        });
+        cartItems.querySelector('ul').appendChild(itemList);
+    </script>
+</body>
+</html>

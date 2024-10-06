@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="Assets/Css Files/product.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <p><span>Nagamathi</span>Automobile</p>
+            <nav>
+            </nav>
+        </div>
+        <div class="content">
+            <h2>OUR PRODUCTS</h2>
+            <div class="product-list">
+                <!--FIRST SET OF PRODUCTS -->
+                <div class="product">
+                    <img src="Assets/Images/Product Img/bike chain.jpg" alt="bikechain">
+                    <h3> BIKE CHAIN </h3>
+                    
+                    <p>₹ 900</p>
+                    <button onclick="addToCart(' BIKE CHAIN ')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/bike headlight.jpg" alt="bikeheadlight">
+                    <h3> BIKE HEADLIGHT </h3>
+                    <p>₹ 700</p>
+                    <button onclick="addToCart('BIKE HEADLIGHT')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/tyre inner tube.jpg" alt="tyreinner">
+                    <h3> TYRE INNER TUBE</h3>
+                    <p>₹ 300</p>
+                    <button onclick="addToCart('TYRE INNER TUBE')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/helmets.jpg" alt="helmets">
+                    <h3> HELMETS</h3>
+                    <p>₹ 450 </p>
+                    <button onclick="addToCart(' HELMETS')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/patch kit.jpg" alt="patchkit">
+                    <h3> PATCH KIT</h3>
+                    <p>₹1,100 </p>
+                    <button onclick="addToCart('PATCH KIT')">Add to Cart</button>
+                </div>
+       
+                <div class="product">
+                    <img src="Assets/Images/Product Img/bike tyres.jpg" alt="biketyres">
+                    <h3> BIKE TYRES</h3>
+                    <p>₹ 1,350</p>
+                    <button onclick="addToCart('BIKE TYRES')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/lubricant oil.jpg" alt="lubricantoil">
+                    <h3> LUBRICANT OIL</h3>
+                    <p>₹ 550 </p>
+                    <button onclick="addToCart('LUBRICANT OIL')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/brake cable.jpg" alt="brakecable">
+                    <h3> BRAKE CABLE</h3>
+                    <p>₹ 275</p>
+                    <button onclick="addToCart('BRAKE CABLE')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/bike handlebar grip.jpg" alt="bikehandlebargrip">
+                    <h3>BIKE HANDLEBAR GRIP</h3>
+                    <p>₹ 640</p>
+                    <button onclick="addToCart('BIKE HANDLEBAR GRIP')">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="Assets/Images/Product Img/bike brake pads.jpg" alt="bikebrakepads">
+                    <h3> BIKE BRAKE PADS</h3>
+                    <p>₹ 380</p>
+                    <button onclick="addToCart('BIKE BRAKE PADS')">Add to Cart</button>
+                </div>
+            <div class="view-cart">
+                <button onclick="viewCart()">View Cart</button>
+                <div class="cart-items" id="cartItems"></div>
+            </div>
+        </div>
+    </div>
+   <!-- JavaScript code -->
+   <script>
+    let cart = [];
+
+    // Function to add items to the cart
+    function addToCart(item) {
+        cart.push(item);
+    }
+
+    // Function to view the cart
+    function viewCart() {
+        // Redirect to the cart page with selected items as query parameters
+        window.location.href = "cart.html?items=" + JSON.stringify(cart);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body{
+            background-image: linear-gradient(rgba(244, 243, 243, 0.4),
+            rgba(233, 233, 233, 0.4)),url(Assets/Images/feedback.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        td{
+            padding: 25px;
+        }
+        h1{
+            color: chocolate;
+            text-transform: uppercase;
+        }
+        input[type="text"]:focus{
+            outline: none;
+            border:3px solid rebeccapurple;
+        }
+        input[type="email"]:focus{
+            outline: none;
+            border:3px solid rebeccapurple;
+        }
+        #feedback:focus{
+            outline: none;
+            border :3px solid rebeccapurple;
+        }
+        label{
+            color: crimson;
+            font-size: 20px;
+        }
+        input[type="submit"]:focus{
+            outline: none;
+            border: 1px solid rebeccapurple;
+        }
+        input[type="text"]{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:crimson;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        input[type="email"]{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:crimson;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        #feedback{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:crimson;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        input[type="submit"]{
+            background: transparent;
+            color:crimson;
+            border: 1px solid teal;
+            padding: 6px 15px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Feedback Form</h1>
+        <table cellpadding="10px">
+            <form action="Feedback.php" method="post">
+                <tr>
+                    <td><label for="Name">Name</label></td>
+                    <td>:<input type="text" id="username3"
+                         name="username3" placeholder="Enter your Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-Mail</label></td>
+                    <td>:<input type="email" id="email3"
+                         name="email3" placeholder="Enter your Email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="feedback">Feedback</label></td>
+                    <td><textarea id="feedback" name="feedback" cols="45" rows="10" placeholder="Enter your Feedback"></textarea> </td>
+                </tr>
+                <tr>
+                    <td><input type="Submit" value="Submit"></td>
+                </tr>
+            </form>
+        </table>
+    </center>
+</body>
+</html>

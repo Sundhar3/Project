@@ -1,0 +1,122 @@
+body{
+    background-color: black;
+    height: 100%;
+ }
+ h1{
+     text-align: center;
+     color: green;
+     font-style: bold;
+ }
+ p{
+     width: 550px;
+     color: white;
+     margin-bottom: 10pxpx;
+     margin-left:25%;
+     font-size: 22px;
+     text-indent: 10px;
+ }
+.pic1{
+     float: left;
+     width: 30%;
+     padding-right: 10px;
+     border: 4px solid black;
+ }
+ .box1{
+     position: absolute;
+     width: 70%;
+     padding: 10px;
+     border: 1px solid white;
+     margin: 20px;
+     margin-left: 10%;
+     display: block;
+ }
+ .box1,p1{
+     font-size: 20px;
+     padding-right: 15px;
+     color: white;
+     }
+  .box1,b{
+    color: green;
+    font-size: 20px;
+ }
+ .pic2{
+    width: 30%;
+    float: right;
+    padding-left: 10px;
+ }
+ .box2{
+    width: 70%;
+    position: absolute;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10%;
+    display: block;
+ }
+ .box2,p2{
+    margin-top: 230px;
+    padding:15px;
+    font-size: 21px;
+    color: white;
+ }
+ .pic3{
+    float: left;
+    width: 30%;
+    border: 5px solid black;
+ }
+ .box3{
+    width: 70%;
+    border: 2px solid white;
+    margin: 20px;
+    margin-left: 10%;
+    padding: 10px;
+    position: absolute;
+    display: block;
+ }
+ .box3,p3{
+    margin-top: 500px;
+    padding-right:15px;
+    font-size: 21px;
+    color: white;
+ }
+ .pic4{
+    float: right;
+    width: 30%;
+    border: 5px solid black;
+ }
+ .box4{
+    width: 70%;
+    border: 2px solid white;
+    margin: 10%;
+    font-size: 21px;
+    padding: 13px;
+    position: absolute;
+    display: block;
+ }
+ .box4,p4{
+    margin-top: 720px;
+    color: white;
+ }
+ .pic5{
+    float: left;
+    width: 30%;
+    border: 5px solid black;
+ }
+ .box5{
+    width: 70%;
+    border: 2px solid white;
+    margin: 10%;
+    padding: 15px;
+    position: absolute;
+    display: block;
+ }
+ .box5,p5{
+    margin-top: 920px;
+    color: white;
+    font-size: 21px;
+ }
+:is(h1,b):hover{
+   color: darkmagenta;
+}
+:is(p,p1,p2,p3,p4,p5):hover{
+   color:seagreen;
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:black;
+}
+.login-box{
+    position: absolute;
+    width: 390px;
+    border: 2px rgb(10, 192, 192) solid;
+    padding: 30px;
+    box-shadow:0 0 30px aqua ;
+}
+.login-box form{
+    width: 100%;
+    padding: 0 50px;
+}
+h2{
+    font: size 20px;;
+    color: aqua;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 25px 0px;
+}
+.input-box input{
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 40px;
+    font-size: 15px;
+    color: white;
+    padding:0px 18px;
+    padding-top: 7px;
+}
+.input-box input:focus,
+.input-box input:valid{
+    border-color: aqua;
+}
+.input-box label{
+    position: absolute;
+    left: 20px;
+    top: 30%;
+    font-size: 15px;
+    color: white;
+    transition: .3s ease; 
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    font-size: 13px; 
+    top: 2px;
+    padding: 0 1px;
+    color: aqua;
+}
+.button-1{
+    width: 100%;
+    height: 38px;
+    margin-top: 4px;
+    background: aquamarine;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    font-size: 17px;
+}
+.signup{
+    margin: 8px 0;
+    text-align: center;
+}
+.signup a{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+.signup a:hover{
+    color: aqua;
+}

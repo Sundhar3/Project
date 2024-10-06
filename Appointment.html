@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <style>
+        body{
+            background-image:linear-gradient(rgba(244, 243, 243, 0.8),
+            rgba(233, 233, 233, 0.8)),url(Assets/Images/appointment.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        input[type="text"]:focus{
+            outline: none;
+            border: 3px solid teal;
+        }
+        input[type="email"]:focus{
+            outline: none;
+            border: 3px solid teal;
+        } 
+        input[type="number"]:focus{
+            outline: none;
+            border: 3px solid teal;
+        }
+        input[type="date"]:focus{
+            outline: none;
+            border: 3px solid teal;
+        }
+        h2{
+            text-transform: uppercase;
+            color: teal;
+        }
+        label{
+            color: darkorchid;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        button{
+            padding: 8px 15px;
+            border-radius: 20px;
+            color: darkorchid;
+            font-weight: 700;
+        }
+        button:focus{
+            outline: none;
+            border: 3px solid teal;
+        }
+        input[type="text"]{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:rgb(19, 19, 215);
+            font-size: 13px;
+            font-weight: 600;
+        }
+        input[type="email"]{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:rgb(19, 19, 215);
+            font-size: 13px;
+            font-weight: 600;
+        }
+        input[type="number"]{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:rgb(19, 19, 215);
+            font-size: 13px;
+            font-weight: 600;
+        }
+        input[type="date"]{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:rgb(19, 19, 215);
+            font-size: 13px;
+            font-weight: 600;
+        }
+        #symptoms{
+            border-radius: 30px;
+            padding: 10px;
+            outline: none;
+            border: 2px solid teal;
+            background: transparent;
+            color:rgb(57, 57, 149);
+            font-size: 13px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table cellpadding="20px">
+            <h2>Appointment Form</h2>
+            <form action="database.php" method="post">
+            <tr>
+                <td><label>Name</label></td>
+                <td>:  <input type="text" name="username" id="username" placeholder="Enter your Name" required></td>
+            </tr>
+            <tr>
+                <td><label>E-Mail</label></td>
+                <td> : <input type="email" id="email" name="email" placeholder="Enter Your E-Mail" required></td>
+            </tr>
+            <tr>
+                <td><label>Mobile.No</label></td>
+                <td> : <input type="number" id="number" name="number" placeholder ="Enter Your Mobile.No" required></td>
+            </tr>
+            <tr>
+                <td><label>Date  </label></td>
+                <td> : <input type="date" id="date" name="date" required></td>
+            </tr>
+            <tr>
+                <td><label>Symptoms</label></td>
+                <td><textarea id="symptoms" name="symptoms" cols="45" rows="10" placeholder="Enter your Symptoms"></textarea> </td>
+            </tr>
+            <tr>
+                <td><button>SUBMIT</button></td>
+            </tr>
+        </form>
+        </table>
+    </center>
+</body>
+</html>
